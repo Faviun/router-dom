@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import AsignBlock from "./components/AsignBlock/AsignBlock";
 
 function App() {
+  const user = {
+    photo: 'https://i.ytimg.com/vi/OGCO07Zcp-k/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoACwAOKAgwIABABGGUgXyhDMA8=&rs=AOn4CLB3I4V5l1nxVVHIqF8vp37Xl8hpmw',
+    first_name: 'Alice',
+    last_name: 'Smith',
+    role: 'Pet owner',
+    isActive: true
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <AsignBlock user={user} />
     </div>
   );
 }

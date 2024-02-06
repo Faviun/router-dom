@@ -1,17 +1,84 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import LoginPage from './pages/LoginPage';
+import News from './components/News/News';
+import Maps from './components/Maps/Maps';
+import WantedPets from './components/WantedPets/WantedPets';
+import Wiki from './components/Wiki/Wiki';
+import Messanges from './components/Messanges/Messanges';
+import Friends from './components/Friends/Friends';
+import Groups from './components/Groups/Groups';
+import VetHelp from './components/VetHelp/VetHelp';
+import PetStore from './components/PetStore/PetStore';
+import PetShelters from './components/PetShelters/PetShelters';
+import VolounterTeams from './components/VolounterTeams/VolounterTeams';
+import OtherServices from './components/OtherServices/OtherServices';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />
+  },
+  {
+    path: "/login",
+    element: <LoginPage />
+  },
+  {
+    path: "/news",
+    element: <News />
+  },
+  {
+    path: "/map",
+    element: <Maps />
+  },
+  {
+    path: "/wanted",
+    element: <WantedPets />
+  },
+  {
+    path: "/wiki",
+    element: <Wiki />
+  },
+  {
+    path: "/messanges",
+    element: <Messanges />
+  },
+  {
+    path: "/friends",
+    element: <Friends />
+  },
+  {
+    path: "/groups",
+    element: <Groups />
+  },
+  {
+    path: "/vhelp",
+    element: <VetHelp />
+  },
+  {
+    path: "/pstore",
+    element: <PetStore />
+  },
+  {
+    path: "/pshelters",
+    element: <PetShelters />
+  },
+  {
+    path: "/vteams",
+    element: <VolounterTeams />
+  },
+  {
+    path: "/oservices",
+    element: <OtherServices />
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
