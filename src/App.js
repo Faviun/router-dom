@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import AsignBlock from "./components/AsignBlock/AsignBlock";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="flex">
       <AsignBlock user={user} />
+      <Outlet />
     </div>
   );
 }
