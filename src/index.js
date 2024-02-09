@@ -4,7 +4,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import LoginPage from './pages/LoginPage';
-import News from './components/News/News';
+import News from './pages/News';
 import Maps from './components/Maps/Maps';
 import WantedPets from './components/WantedPets/WantedPets';
 import Wiki from './components/Wiki/Wiki';

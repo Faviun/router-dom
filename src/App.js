@@ -10,9 +10,10 @@ function App() {
     isActive: true
   }
   return (
-    <div className="flex">
+    <div className="grid grid-cols-[1fr_2.5fr_1.5fr] gap-[20px]">
       <AsignBlock user={user} />
       <Outlet />
+      <div>Map</div>
     </div>
   );
 }

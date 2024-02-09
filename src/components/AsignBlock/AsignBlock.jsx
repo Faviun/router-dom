@@ -5,7 +5,7 @@ import GearModal from '../GearModal/GearModal';
 
 const AsignBlock = ({user}) => {
     return (
-        <div className='border p-[10px] m-[20px]'>
+        <div className='border p-[10px] my-[20px]'>
             <HeaderAside userInfo={user} />
             <BodyAside />
             <GearModal />
